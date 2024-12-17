@@ -1,14 +1,27 @@
 package org.example.java_231_9;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
+    private Button button;
+    @FXML
+    private TextArea L;
+    @FXML
+    private TextArea R;
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+        String tem;
+        if (button.getText().equals("->")){
+            button.setText("<-");
+        }
+        else {button.setText("->");}
+        tem = L.getText();
+        L.setText(R.getText());
+        R.setText(tem);
+
     }
 }

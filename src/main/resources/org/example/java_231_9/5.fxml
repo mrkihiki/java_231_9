@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_231_9.Controller5">
+   <children>
+      <RadioButton fx:id="RadB11" layoutX="178.0" layoutY="95.0" mnemonicParsing="false" onAction="#RadB11" text="Красный" />
+      <RadioButton fx:id="RadB21" layoutX="178.0" layoutY="129.0" mnemonicParsing="false" onAction="#RadB21" text="Зелёный" />
+      <RadioButton fx:id="RadB31" layoutX="178.0" layoutY="166.0" mnemonicParsing="false" onAction="#RadB31" text="Белый" />
+      <RadioButton fx:id="RadB12" layoutX="300.0" layoutY="95.0" mnemonicParsing="false" onAction="#RadB12" text="Красный" />
+      <RadioButton fx:id="RadB22" layoutX="300.0" layoutY="129.0" mnemonicParsing="false" onAction="#RadB22" text="Зелёный" />
+      <RadioButton fx:id="RadB32" layoutX="300.0" layoutY="166.0" mnemonicParsing="false" onAction="#RadB32" text="Белый" />
+      <RadioButton fx:id="RadB13" layoutX="398.0" layoutY="94.0" mnemonicParsing="false" onAction="#RadB13" text="Красный" />
+      <RadioButton fx:id="RadB23" layoutX="398.0" layoutY="128.0" mnemonicParsing="false" onAction="#RadB23" text="Зелёный" />
+      <RadioButton fx:id="RadB33" layoutX="398.0" layoutY="165.0" mnemonicParsing="false" onAction="#RadB33" text="Белый" />
+      <Button layoutX="71.0" layoutY="124.0" mnemonicParsing="false" onAction="#PrintFlag" text="Нарисовать" />
+      <Text fx:id="Text1" layoutX="60.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="461.13671875" />
+   </children>
+</AnchorPane>

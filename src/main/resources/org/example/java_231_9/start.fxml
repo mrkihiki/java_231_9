@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_231_9.Start">
+   <children>
+      <Button mnemonicParsing="false" onAction="#onHelloButtonClick1" prefHeight="111.0" prefWidth="184.0" text="1" />
+      <Button mnemonicParsing="false" onAction="#onHelloButtonClick2" prefHeight="111.0" prefWidth="184.0" text="2" />
+      <Button mnemonicParsing="false" onAction="#onHelloButtonClick3" prefHeight="111.0" prefWidth="184.0" text="3" />
+      <Button mnemonicParsing="false" onAction="#onHelloButtonClick4" prefHeight="111.0" prefWidth="184.0" text="4" />
+      <Button mnemonicParsing="false" onAction="#onHelloButtonClick5" prefHeight="111.0" prefWidth="184.0" text="5" />
+   </children>
+</VBox>
