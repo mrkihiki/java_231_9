@@ -7,97 +7,107 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 
 
 public class Controller4 {
-    public String x="";
+    public String expressionx ="";
     public Text Text1;
+    public boolean netTocham=true;
 
     public void Onpls(ActionEvent actionEvent) {
-        x=x+"+";
-        Text1.setText(x);
+        expressionx = expressionx +"+";
+        Text1.setText(expressionx);
+        netTocham=true;
     }
 
     public void Onminus(ActionEvent actionEvent) {
-        x=x+"-";
-        Text1.setText(x);
+        expressionx = expressionx +"-";
+        Text1.setText(expressionx);
+        netTocham=true;
     }
 
     public void OnYm(ActionEvent actionEvent) {
-        x=x+"*";
-        Text1.setText(x);
+        expressionx = expressionx +"*";
+        Text1.setText(expressionx);
+        netTocham=true;
     }
 
     public void On1(ActionEvent actionEvent) {
-        x=x+"1";
-        Text1.setText(x);
+        expressionx = expressionx +"1";
+        Text1.setText(expressionx);
     }
 
     public void On2(ActionEvent actionEvent) {
-        x=x+"2";
-        Text1.setText(x);
+        expressionx = expressionx +"2";
+        Text1.setText(expressionx);
     }
 
     public void On3(ActionEvent actionEvent) {
-        x=x+"3";
-        Text1.setText(x);
+        expressionx = expressionx +"3";
+        Text1.setText(expressionx);
     }
 
     public void On4(ActionEvent actionEvent) {
-        x=x+"4";
-        Text1.setText(x);
+        expressionx = expressionx +"4";
+        Text1.setText(expressionx);
     }
 
     public void On5(ActionEvent actionEvent) {
-        x=x+"5";
-        Text1.setText(x);
+        expressionx = expressionx +"5";
+        Text1.setText(expressionx);
     }
 
     public void On6(ActionEvent actionEvent) {
-        x=x+"6";
-        Text1.setText(x);
+        expressionx = expressionx +"6";
+        Text1.setText(expressionx);
     }
 
     public void On7(ActionEvent actionEvent) {
-        x=x+"7";
-        Text1.setText(x);
+        expressionx = expressionx +"7";
+        Text1.setText(expressionx);
     }
 
     public void On8(ActionEvent actionEvent) {
-        x=x+"8";
-        Text1.setText(x);
+        expressionx = expressionx +"8";
+        Text1.setText(expressionx);
     }
 
     public void On9(ActionEvent actionEvent) {
-        x=x+"9";
-        Text1.setText(x);
+        expressionx = expressionx +"9";
+        Text1.setText(expressionx);
     }
 
     public void On0(ActionEvent actionEvent) {
-        x=x+"0";
-        Text1.setText(x);
+        expressionx = expressionx +"0";
+        Text1.setText(expressionx);
     }
 
     public void OnDel(ActionEvent actionEvent) {
-        x=x+"/";
-        Text1.setText(x);
+        expressionx = expressionx +"/";
+        Text1.setText(expressionx);
+        netTocham=true;
     }
 
     public void OnC(ActionEvent actionEvent) {
-        x=null;
+        expressionx ="";
         Text1.setText("");
+        netTocham=true;
     }
 
     public void OnFloat(ActionEvent actionEvent) {
-        x=x+".";
-        Text1.setText(x);
+        if(netTocham) {
+            expressionx = expressionx + ".";
+            Text1.setText(expressionx);
+            netTocham=false;
+        }
     }
 
     public void OnOtvet(ActionEvent actionEvent) {
-        Expression exp = new ExpressionBuilder(x).build();
+        Expression exp = new ExpressionBuilder(expressionx).build();
             try {
                 double y = exp.evaluate();
                 Text1.setText(String.valueOf(y));
             }catch (ArithmeticException  e){
                 Text1.setText("Error");
             }
-        x=null;
+        expressionx ="";
+        netTocham=true;
     }
 }

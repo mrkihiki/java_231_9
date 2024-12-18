@@ -66,17 +66,17 @@ public class Controller3 {
     @FXML
     public void initialize() {
         TextA1.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.matches("-?\\d*")) {
+            if (!newValue.matches("\\d*?")) {
                 TextA1.setText(oldValue);
             }
         });
         TextA2.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.matches("-?\\d*")) {
+            if (!newValue.matches("\\d*?")) {
                 TextA2.setText(oldValue);
             }
         });
         TextA3.textProperty().addListener((observable, oldValue, newValue) -> {
-            if (!newValue.matches("-?\\d*")) {
+            if (!newValue.matches("\\d*?")) {
                 TextA3.setText(oldValue);
             }
         });
