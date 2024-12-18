@@ -54,6 +54,7 @@ public class Start {
         Stage stage= new Stage();
         Scene scene = new Scene(fxmlLoader.load(), 600, 800);
         stage.setTitle("3");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
